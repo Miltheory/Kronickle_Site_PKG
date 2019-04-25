@@ -1,0 +1,239 @@
+div.nav {
+
+    left: 0;
+    padding: 34px 0;
+    position: absolute;
+    top: 0;
+    transition: padding $transition;
+    user-select: none;
+    width: 100%;
+    z-index: 1001;
+
+    &__logo {
+
+        left: gutter()*2.5;
+        position: absolute;
+        top: 6px;
+
+        &__logotype {
+            float: left;
+        }
+
+        &__tagline {
+            clear: both;
+            float: left;
+            margin: 11px 0 0 35px;
+            transition: opacity $transition;
+        }
+
+        a {
+            display: block;
+            float: left;
+        }
+
+        svg path {
+            fill: $white;
+        }
+
+    }
+
+    &__demo {
+
+        display: none;
+        float: right;
+        font-size: 0;
+        line-height: 0;
+        margin-right: gutter()*2.5;
+
+        a.common-link:before {
+            border-radius: 4px;
+        }
+
+    }
+
+    &__options {
+
+        display: none;
+        float: right;
+        font-size: 0;
+        line-height: 0;
+        margin-right: 20px;
+
+        ul {
+
+            @include proxima();
+            float: left;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 15px;
+            text-transform: uppercase;
+
+            li {
+
+                float: left;
+                position: relative;
+
+                a {
+
+                    color: $white;
+                    display: block;
+                    padding: 12px 20px;
+                    position: relative;
+                    transition: color $transition;
+
+                    &:before {
+                        background: $primary-blue;
+                        bottom: 4px;
+                        content: '';
+                        height: 2px;
+                        left: 20px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: opacity $transition, width $transition;
+                        width: 0;
+                    }
+
+                    &:hover {
+
+                        color: $primary-blue;
+
+                        &:before {
+                            opacity: 1;
+                            width: calc(100% - 40px);
+                        }
+
+                    }
+
+                }
+
+                &.selected a {
+
+                    color: $primary-blue;
+
+                    &:before {
+                        opacity: 1;
+                        width: calc(100% - 40px);
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &:before {
+        background: $white;
+        content: '';
+        height: 0;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        transition: box-shadow $transition, height $transition, opacity $transition;
+        width: 100%;
+    }
+
+
+
+    &--slim {
+
+        padding: 10px 0;
+        position: fixed;
+
+        div.nav__logo {
+
+            &__tagline {
+                opacity: 0;
+            }
+
+            svg path {
+                fill: $primary-blue;
+            }
+
+        }
+
+        div.nav__demo a.common-link {
+
+            &:before {
+                background: $primary-pink;
+            }
+
+            &:hover span {
+                color: $white;
+            }
+
+        }
+
+        div.nav__options {
+
+            ul li {
+
+                a {
+
+                    color: $primary-blue;
+
+                    &:before {
+                        background: $primary-pink;
+                    }
+
+                    &:hover {
+                        color: $primary-pink;
+                    }
+
+                }
+
+                &.selected a {
+                    color: $primary-pink;
+                }
+
+            }
+
+        }
+
+        &:before {
+            box-shadow: 0 1px 0 rgba($black, 0.1);
+            opacity: 1;
+            height: 59px;
+        }
+
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        padding: 50px 0;
+
+        &__demo,
+        &__options {
+            display: block;
+        }
+
+        &--slim {
+
+            padding: 20px 0;
+
+            &:before {
+                height: 79px;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

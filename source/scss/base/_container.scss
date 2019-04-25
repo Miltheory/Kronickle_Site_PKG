@@ -1,0 +1,5 @@
+div.container {
+    @include container;
+    clear: both;
+    position: relative;
+}

@@ -1,0 +1,219 @@
+div.footer {
+
+    @include span(full);
+    background: $primary-blue;
+    border-top: 2px solid $white;
+
+    &__body {
+        @include span(19 no-gutters);
+        margin: 80px gutter()*5;
+        position: relative;
+    }
+
+    &__content {
+
+        @include span(full);
+
+        h6 {
+            border-bottom: 1px solid $primary-pink;
+            color: $white;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 21px;
+            margin-bottom: 9px;
+            text-transform: uppercase;
+        }
+
+        ul {
+
+            clear: both;
+            color: $white;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.035em;
+            line-height: 16px;
+
+            li {
+
+                display: block;
+
+                a,
+                span {
+                    display: inline-block;
+                    padding: 3px 0;
+                }
+
+                a {
+
+                    color: $white;
+                    position: relative;
+                    transition: color $transition;
+
+                    &:before {
+                        background: rgba($secondary-blue-light, 0.25);
+                        bottom: 0;
+                        content: '';
+                        height: 1px;
+                        left: 0;
+                        position: absolute;
+                        transition: width $transition;
+                        width: 0;
+                    }
+
+                    &:hover {
+
+                        color: $secondary-blue-light;
+
+                        &:before {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &--connect {
+            margin: -8px 0 28px 0;
+        }
+
+        &--legal {
+
+            margin-bottom: -6px;
+
+            ul {
+                color: $grey;
+            }
+
+        }
+
+    }
+
+    &__scroll {
+
+        height: 51px;
+        position: absolute;
+        right: gutter()*8;
+        top: -25px;
+        width: 51px;
+
+        a {
+
+            background: rgba($white, 0.3);
+            border-radius: 100%;
+            display: block;
+            height: 51px;
+            position: relative;
+            transition: background $transition;
+            width: 51px;
+
+            span {
+
+                background: $white;
+                border-radius: 100%;
+                display: block;
+                height: 39px;
+                left: 9px;
+                position: absolute;
+                top: 9px;
+                transition: top $transition;
+                width: 39px;
+
+                svg {
+
+                    height: 20px;
+                    left: 12px;
+                    position: absolute;
+                    top: 10px;
+
+                    width: 15px;
+
+                    path {
+                        fill: $grey;
+                        transition: fill $transition;
+                    }
+
+                }
+
+            }
+
+            &:hover span {
+
+                top: 6px;
+
+                svg path {
+                    fill: $secondary-blue;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        &__body {
+            margin-bottom: 100px;
+            margin-top: 100px;
+        }
+
+        &__content {
+
+            width: 50%;
+
+            &--connect {
+                margin-bottom: -6px;
+            }
+
+            &--legal {
+                float: right;
+                margin-top: 25px;
+                text-align: right;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+body.mobile {
+
+    div.footer {
+
+        &__content ul li a:hover {
+
+            color: $white;
+
+            &:before {
+                width: 0;
+            }
+
+        }
+
+        &__scroll a:hover span {
+
+            top: 9px;
+
+            svg path {
+                fill: $grey;
+            }
+
+        }
+
+    }
+
+}

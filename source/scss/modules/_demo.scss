@@ -1,0 +1,62 @@
+div.demo {
+
+    @include span(full);
+    background: $primary-pink;
+
+    &__body {
+        @include span(19 no-gutters);
+        margin: 80px gutter()*5;
+        position: relative;
+    }
+
+    &__headline {
+        @include span(full);
+        margin: -5px 0 26px 0;
+    }
+
+    &__content {
+        @include span(full);
+        margin: -6px 0 -24px 0;
+    }
+
+    &__link {
+        @include span(full);
+        font-size: 0;
+        line-height: 0;
+        margin-top: 40px;
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        &__body {
+            margin-bottom: 150px;
+            margin-top: 150px;
+        }
+
+        &__headline {
+            margin-bottom: 36px;
+        }
+
+/*
+        &__link {
+            margin-top: 40px;
+        }
+*/
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

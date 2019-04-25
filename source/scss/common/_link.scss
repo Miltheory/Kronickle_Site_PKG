@@ -1,0 +1,158 @@
+.common-link {
+
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 39px;
+    overflow: hidden;
+    padding: 12px 0;
+    position: relative;
+    transition: background $transition, color $transition;
+    user-select: none;
+    width: 170px;
+
+    span {
+        @include proxima();
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        left: 0.1em;
+        letter-spacing: 0.1em;
+        line-height: 15px;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 12px;
+        transition: color $transition;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &:before {
+        content: '';
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        transition: width $transition;
+        width: 0;
+    }
+
+    &:hover {
+
+        span {
+            color: $white;
+        }
+
+        &:before {
+            width: 100%;
+        }
+
+    }
+
+
+
+    &--color-blue {
+
+        background: $primary-blue;
+
+        span {
+            color: $white;
+        }
+
+        &:before {
+            background: $white;
+        }
+
+        &:hover {
+
+            span {
+                color: $primary-blue;
+            }
+
+        }
+
+    }
+
+
+
+    &--color-pink {
+
+        background: $primary-pink;
+
+        span {
+            color: $white;
+        }
+
+        &:before {
+            background: $white;
+        }
+
+        &:hover {
+
+            span {
+                color: $primary-blue;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+body.mobile {
+
+    .common-link {
+
+        &:hover {
+
+            span {
+                color: $white;
+            }
+
+            &:before {
+                width: 0;
+            }
+
+        }
+
+
+
+        &--color-blue {
+
+            &:hover {
+
+                span {
+                    color: $white;
+                }
+
+            }
+
+        }
+
+
+
+        &--color-pink {
+
+            &:hover {
+
+                span {
+                    color: $white;
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+}

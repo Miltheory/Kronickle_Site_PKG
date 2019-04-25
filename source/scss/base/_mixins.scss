@@ -1,0 +1,13 @@
+@mixin proxima() {
+    font-family: 'Proxima-Soft', Sans-Serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin imgscale() {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    width: 100%;
+}

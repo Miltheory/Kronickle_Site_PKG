@@ -1,0 +1,49 @@
+div.intro {
+
+    @include span(full);
+    background: $white;
+
+    &__body {
+        @include span(19 no-gutters);
+        margin: 80px gutter()*5;
+        position: relative;
+    }
+
+    &__headline {
+        @include span(full);
+        margin: -5px 0 26px 0;
+    }
+
+    &__content {
+        @include span(full);
+        margin: -6px 0 -24px 0;
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        &__body {
+            margin-bottom: 150px;
+            margin-top: 150px;
+        }
+
+        &__headline {
+            margin-bottom: 36px;
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

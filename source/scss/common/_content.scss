@@ -1,0 +1,168 @@
+div.common-content {
+
+    h1 {
+        font-size: 27px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        line-height: 27px;
+        padding-bottom: 9px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.075em;
+        line-height: 24px;
+        padding: 1px 0 9px 0;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        line-height: 19px;
+        padding: 2px 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.045em;
+        line-height: 19px;
+        padding: 2px 0 10px 0;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        line-height: 14px;
+        padding: 3px 0 11px 0;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.045em;
+        line-height: 22px;
+        padding-bottom: 19px;
+    }
+
+    a {
+
+        color: $primary-pink;
+        text-decoration: underline;
+
+        &:hover {
+            color: $black;
+        }
+
+    }
+
+
+
+    &--color-blue {
+
+        color: $secondary-blue;
+
+        a {
+
+            color: $primary-pink;
+
+            &:hover {
+                color: $secondary-blue;
+            }
+
+        }
+
+    }
+
+    &--color-black {
+
+        color: $black;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $secondary-blue;
+        }
+
+        a {
+
+            color: $primary-pink;
+
+            &:hover {
+                color: $black;
+            }
+
+        }
+
+    }
+
+    &--color-white {
+
+        color: $white;
+
+        a {
+
+            color: $primary-blue;
+
+            &:hover {
+                color: $white;
+            }
+
+        }
+
+    }
+
+
+
+/*
+    @include susy-media(1024px) {
+
+
+
+    }
+*/
+
+
+
+}
+
+
+
+body.mobile {
+
+    a:hover {
+        color: $primary-pink;
+    }
+
+    &--color-blue a:hover {
+        color: $primary-pink;
+    }
+
+    &--color-black a:hover {
+        color: $primary-pink;
+    }
+
+    &--color-white a:hover {
+        color: $primary-blue;
+    }
+
+}

@@ -1,0 +1,28 @@
+$white: #FFF;
+
+$black: #231F20;
+
+$grey: #9B9B9B;
+
+$primary-blue: #16314C;
+$primary-purple: #6034AC;
+$primary-pink: #FF6058;
+$primary-pink-dark: darken($primary-pink, 15%);
+
+$secondary-blue: #224465;
+$secondary-blue-light: #42B8EA;
+$secondary-purple: #8C1692;
+$secondary-pink: #FE83AF;
+$secondary-green: #4CDD84;
+$secondary-orange: #FFB055;
+
+$transition: 0.3s cubic-bezier(0.5, 0.0, 0.2, 1.0);
+$transition-delay: 0.3s 0.3s cubic-bezier(0.5, 0.0, 0.2, 1.0);
+
+$susy: (
+
+    columns: 24,
+    container: 1200px,
+    gutters: 1
+
+);

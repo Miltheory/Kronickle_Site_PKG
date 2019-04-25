@@ -1,0 +1,75 @@
+div.banner {
+
+    @include span(full);
+    background: $primary-pink;
+
+    &__image {
+
+        @include span(19 no-gutters);
+        margin: 165px gutter()*5 40px gutter()*5;
+
+        figure {
+            display: block;
+            margin: 0 auto;
+            max-width: 436px;
+            width: 100%;
+        }
+
+    }
+
+    &__body {
+        @include span(19 no-gutters);
+        margin: 0 gutter()*5 80px gutter()*5;
+    }
+
+    &__headline {
+        @include span(full);
+        margin: -5px 0 26px 0;
+    }
+
+    &__content {
+        @include span(full);
+        margin: -6px 0 -24px 0;
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        &__image {
+
+            @include span(10 no-gutters last);
+            margin: 230px gutter()*5 150px 0;
+
+            figure {
+                margin: 0;
+                max-width: none;
+            }
+
+        }
+
+        &__body {
+            @include span(8.5 no-gutters);
+            margin: 230px 0 150px gutter()*5;
+        }
+
+        &__headline {
+            margin-bottom: 32px;
+            margin-top: -11px;
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

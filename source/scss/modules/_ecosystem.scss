@@ -1,0 +1,95 @@
+div.ecosystem {
+
+    @include span(full);
+    background: $white;
+    border-bottom: 2px solid lighten($grey, 30%);
+    border-top: 2px solid lighten($grey, 30%);
+    color: $grey;
+    padding: 200px 0;
+    text-align: center;
+
+
+
+/*
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    div.container {
+        max-width: 600px;
+    }
+
+    &__wrap {
+        float: left;
+        margin: 30px 40px 60px 40px;
+        position: relative;
+        width: calc(100% - 80px);
+    }
+
+    &__image {
+
+        @include span(full);
+        margin-bottom: 30px;
+
+        img {
+            max-width: 80px;
+        }
+
+    }
+
+    &__content {
+        @include span(full);
+        color: $black;
+        margin: -7px 0 -33px 0;
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        text-align: left;
+
+        div.container {
+            max-width: 950px;
+        }
+
+        &__wrap {
+            margin: 80px;
+            width: calc(100% - 160px);
+        }
+
+        &__image {
+
+            float: left;
+            margin: -20px 0 0 0;
+            width: 115px;
+
+            img {
+                max-width: none;
+            }
+
+        }
+
+        &__content {
+            color: $black;
+            float: right;
+            margin: -7px 0 -33px 0;
+            width: calc(100% - 155px);
+        }
+
+    }
+*/
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

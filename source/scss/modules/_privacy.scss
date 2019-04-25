@@ -1,0 +1,54 @@
+div.privacy {
+
+    @include span(full);
+    background: $white;
+    overflow: hidden;
+    position: relative;
+
+    &__body {
+        float: left;
+        margin: 60px;
+        position: relative;
+        width: calc(100% - 120px);
+    }
+
+    &__headline {
+        @include span(full);
+        margin: -5px 0 26px 0;
+    }
+
+    &__content {
+        @include span(full);
+        margin: -6px 0 -24px 0;
+    }
+
+
+
+    @include susy-media(1024px) {
+
+/*
+        &__body {
+            margin-bottom: 150px;
+            margin-top: 150px;
+        }
+*/
+
+        &__headline {
+            margin-bottom: 36px;
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

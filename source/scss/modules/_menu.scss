@@ -1,0 +1,203 @@
+div.menu {
+
+    height: 40px;
+    position: absolute;
+    right: gutter()*2.5;
+    top: 33px;
+    transition: top $transition;
+    width: 39px;
+    z-index: 1003;
+
+    button {
+
+        background: none;
+        cursor: pointer;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        span {
+
+            background: $white;
+            height: 2px;
+            left: 0;
+            margin-top: -1px;
+            position: absolute;
+            top: 50%;
+            transition: background $transition, transform $transition;
+            width: 100%;
+
+            &:before,
+            &:after {
+                background: $white;
+                content: '';
+                height: 2px;
+                left: 0;
+                position: absolute;
+                transition: background $transition, opacity $transition, top $transition-delay;
+                width: 100%;
+            }
+
+            &:before {
+                top: -9px;
+            }
+
+            &:after {
+                top: 9px;
+            }
+
+        }
+
+        &:hover span {
+
+            background: $primary-blue;
+
+            &:before,
+            &:after {
+                background: $primary-blue;
+            }
+
+        }
+
+    }
+
+
+
+    &--open {
+
+        position: fixed;
+
+        button span {
+
+            transform: rotate(225deg) scale(0.9);
+            transition: background $transition, transform $transition-delay;
+
+            &:before {
+                opacity: 0;
+                top: 0;
+                transition: background $transition, opacity $transition-delay, top $transition;
+            }
+
+            &:after {
+                top: 0;
+                transform: rotate(-90deg);
+                transition: background $transition, top $transition, transform $transition-delay;
+            }
+
+        }
+
+        &.menu--slim button {
+
+            span {
+
+                background: $white;
+
+                &:before,
+                &:after {
+                    background: $white;
+                }
+
+            }
+
+            &:hover span {
+
+                background: $primary-blue;
+
+                &:before,
+                &:after {
+                    background: $primary-blue;
+                }
+
+            }
+
+        }
+
+    }
+
+    &--slim {
+
+        position: fixed;
+        top: 9px;
+
+        button {
+
+            span {
+
+                background: $primary-blue;
+
+                &:before,
+                &:after {
+                    background: $primary-blue;
+                }
+
+            }
+
+            &:hover span {
+
+                background: $primary-pink;
+
+                &:before,
+                &:after {
+                    background: $primary-pink;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    @include susy-media(1024px) {
+        display: none;
+    }
+
+
+
+}
+
+
+
+body.mobile {
+
+    div.menu {
+
+        button:hover span {
+
+            background: $white;
+
+            &:before,
+            &:after {
+                background: $white;
+            }
+
+        }
+
+        &--open.menu--slim button:hover span {
+
+            background: $white;
+
+            &:before,
+            &:after {
+                background: $white;
+            }
+
+        }
+
+        &--slim button:hover span {
+
+            background: $primary-blue;
+
+            &:before,
+            &:after {
+                background: $primary-blue;
+            }
+
+        }
+
+    }
+
+}

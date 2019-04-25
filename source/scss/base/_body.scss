@@ -1,0 +1,33 @@
+body {
+
+    @include proxima();
+    background: $white;
+    color: $black;
+    font-size: 16px;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 22px;
+    -webkit-tap-highlight-color: rgba($black, 0);
+
+    a {
+        text-decoration: none;
+        transition: color $transition;
+    }
+
+    img {
+        @include imgscale();
+    }
+
+    input,
+    select,
+    textarea {
+        @include proxima();
+    }
+
+    &.preload * {
+        transition: none !important;
+    }
+
+}

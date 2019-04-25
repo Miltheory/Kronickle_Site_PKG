@@ -1,0 +1,117 @@
+div.benefits {
+
+    @include span(full);
+    background: white;
+
+    &__body {
+        @include span(19 no-gutters);
+        margin: 80px gutter()*5 40px gutter()*5;
+        position: relative;
+    }
+
+    &__headline {
+        @include span(full);
+        margin: -5px 0 26px 0;
+    }
+
+    &__content {
+
+        @include span(full);
+
+        dl {
+            @include span(full);
+            margin: -4px 0 35px 0;
+
+            dt h4 {
+                color: $secondary-purple;
+                margin-bottom: 10px;
+            }
+
+            dd p {
+                padding-bottom: 0;
+            }
+
+        }
+
+    }
+
+
+
+    @include susy-media(768px) {
+
+        &__content {
+
+            dl {
+
+                margin-right: 60px;
+                width: calc(50% - 30px);
+
+                &:nth-child(2n+2) {
+                    margin-right: 0;
+                }
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        &__body {
+            margin-bottom: 90px;
+            margin-top: 150px;
+        }
+
+        &__headline {
+            margin-bottom: 36px;
+        }
+
+        &__content {
+
+            dl {
+
+                margin-bottom: 55px;
+                width: calc(33.33% - 40px);
+
+                &:nth-child(2n+2) {
+                    margin-right: 60px;
+                }
+
+                &:nth-child(2n+1) {
+                    clear: none;
+                }
+
+                &:nth-child(3n+3) {
+                    margin-right: 0;
+                }
+
+                &:nth-child(3n+1) {
+                    clear: both;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/
