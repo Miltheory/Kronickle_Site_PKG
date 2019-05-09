@@ -4,11 +4,11 @@ var anchor = {
 
     settings: {
 
-        easing: 'easeInOutCubic',
+        easing: 'easeOutQuart',
         desktop: 79,
         mobile: 59,
         nav: 0,
-        speed: 600
+        speed: 900
 
     },
 

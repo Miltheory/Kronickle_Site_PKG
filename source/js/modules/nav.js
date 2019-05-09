@@ -4,7 +4,7 @@ var nav = {
 
     ready() {
 
-        $('div.nav__logo a, div.nav__options a').click(function() {
+        $('div.nav__options a').click(function() {
 
             anchor.goto($(this).data('anchor'));
 
@@ -18,11 +18,15 @@ var nav = {
 
             $('div.nav').addClass('nav--slim');
 
+            $('div.logo').addClass('logo--slim');
+
             $('div.menu').addClass('menu--slim');
 
         } else {
 
             $('div.nav').removeClass('nav--slim');
+
+            $('div.logo').removeClass('logo--slim');
 
             $('div.menu').removeClass('menu--slim');
 

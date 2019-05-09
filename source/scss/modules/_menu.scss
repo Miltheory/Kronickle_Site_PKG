@@ -1,12 +1,13 @@
 div.menu {
 
     height: 40px;
+    margin-right: gutter()*2.5;
     position: absolute;
-    right: gutter()*2.5;
-    top: 33px;
+    right: 0;
+    top: 23px;
     transition: top $transition;
-    width: 39px;
-    z-index: 1003;
+    width: 40px;
+    z-index: 1004;
 
     button {
 
@@ -71,7 +72,7 @@ div.menu {
 
         button span {
 
-            transform: rotate(225deg) scale(0.9);
+            transform: rotate(225deg) scale(0.85);
             transition: background $transition, transform $transition-delay;
 
             &:before {
@@ -88,26 +89,32 @@ div.menu {
 
         }
 
-        &.menu--slim button {
+        &.menu--slim {
 
-            span {
+            top: 23px;
 
-                background: $white;
+            button {
 
-                &:before,
-                &:after {
+                span {
+
                     background: $white;
+
+                    &:before,
+                    &:after {
+                        background: $white;
+                    }
+
                 }
 
-            }
+                &:hover span {
 
-            &:hover span {
-
-                background: $primary-blue;
-
-                &:before,
-                &:after {
                     background: $primary-blue;
+
+                    &:before,
+                    &:after {
+                        background: $primary-blue;
+                    }
+
                 }
 
             }
@@ -116,10 +123,12 @@ div.menu {
 
     }
 
+
+
     &--slim {
 
         position: fixed;
-        top: 9px;
+        top: 13px;
 
         button {
 

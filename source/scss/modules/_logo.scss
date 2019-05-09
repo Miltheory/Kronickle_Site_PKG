@@ -1,0 +1,168 @@
+div.logo {
+
+    left: 0;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    transition: padding $transition;
+    user-select: none;
+    width: 100%;
+    z-index: 1003;
+
+    &__wrap {
+        float: left;
+        margin-left: gutter()*2.5;
+        position: relative;
+    }
+
+    &__icon,
+    &__logotype,
+    &__tagline {
+
+        position: absolute;
+
+        svg {
+
+            display: block;
+
+            path {
+                fill: $white;
+                transition: fill $transition;
+            }
+
+        }
+
+    }
+
+    &__logotype {
+        left: 36px;
+        top: 1px;
+    }
+
+    &__tagline {
+        left: 36px;
+        top: 36px;
+        transition: opacity $transition, transform $transition;
+    }
+
+    a {
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    &:before {
+        background: linear-gradient(0deg, rgba($primary-pink, 0), rgba($primary-pink, 0.9), $primary-pink);
+        content: '';
+        height: 114px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity $transition;
+        width: 100%;
+    }
+
+
+
+    &--open {
+
+        position: fixed;
+
+        div.logo__icon,
+        div.logo__logotype,
+        div.logo__tagline {
+
+            svg path {
+                fill: $white;
+            }
+
+        }
+
+        div.logo__tagline {
+            opacity: 0;
+            transform: translateY(-5px);
+        }
+
+        &.logo--slim {
+
+            padding-top: 30px;
+
+            div.logo__icon,
+            div.logo__logotype,
+            div.logo__tagline {
+
+                svg path {
+                    fill: $white;
+                }
+
+            }
+
+            div.logo__tagline {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+        }
+
+        &:before {
+            opacity: 1;
+        }
+
+    }
+
+    &--slim {
+
+        padding-top: 20px;
+        position: fixed;
+
+        div.logo__icon svg path {
+            fill: $primary-pink;
+        }
+
+        div.logo__logotype svg path {
+            fill: $black;
+        }
+
+        div.logo__tagline {
+
+            opacity: 0;
+            transform: translateY(-5px);
+
+            svg path {
+                fill: $white;
+            }
+
+        }
+
+    }
+
+
+
+    @include susy-media(1024px) {
+
+        padding-top: 56px;
+
+        &--slim {
+            padding-top: 26px;
+        }
+
+        &:before {
+            display: none;
+        }
+
+    }
+
+
+
+}
+
+
+
+/*
+body.mobile {
+
+
+
+}
+*/

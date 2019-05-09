@@ -34,6 +34,26 @@ var menu = {
 
     },
 
+    resize() {
+
+        if($(window).width() >= 1024) {
+
+            $('div.nav').removeClass('nav--open');
+
+            $('div.logo').removeClass('logo--open');
+
+            $('div.menu').removeClass('menu--open');
+
+            $('div.drawer').removeClass('drawer--open drawer--close drawer--visible');
+
+            menu.settings.ready = true;
+
+            clearAllBodyScrollLocks();
+
+        }
+
+    },
+
     open() {
 
         if(menu.settings.ready == true) {
@@ -42,7 +62,13 @@ var menu = {
 
             disableBodyScroll(document.querySelector('div.drawer'));
 
+            $('div.nav').addClass('nav--open');
+
+            $('div.logo').addClass('logo--open');
+
             $('div.menu').addClass('menu--open');
+
+            $('div.drawer').scrollTop(0);
 
             $('div.drawer').addClass('drawer--open drawer--visible');
 
@@ -63,6 +89,10 @@ var menu = {
         if(menu.settings.ready == true) {
 
             menu.settings.ready = false;
+
+            $('div.nav').removeClass('nav--open');
+
+            $('div.logo').removeClass('logo--open');
 
             $('div.menu').removeClass('menu--open');
 

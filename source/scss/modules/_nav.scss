@@ -9,34 +9,6 @@ div.nav {
     width: 100%;
     z-index: 1001;
 
-    &__logo {
-
-        left: gutter()*2.5;
-        position: absolute;
-        top: 6px;
-
-        &__logotype {
-            float: left;
-        }
-
-        &__tagline {
-            clear: both;
-            float: left;
-            margin: 11px 0 0 35px;
-            transition: opacity $transition;
-        }
-
-        a {
-            display: block;
-            float: left;
-        }
-
-        svg path {
-            fill: $white;
-        }
-
-    }
-
     &__demo {
 
         display: none;
@@ -83,7 +55,7 @@ div.nav {
                     transition: color $transition;
 
                     &:before {
-                        background: $primary-blue;
+                        background: $white;
                         bottom: 4px;
                         content: '';
                         height: 2px;
@@ -95,8 +67,6 @@ div.nav {
                     }
 
                     &:hover {
-
-                        color: $primary-blue;
 
                         &:before {
                             opacity: 1;
@@ -143,18 +113,6 @@ div.nav {
         padding: 10px 0;
         position: fixed;
 
-        div.nav__logo {
-
-            &__tagline {
-                opacity: 0;
-            }
-
-            svg path {
-                fill: $primary-blue;
-            }
-
-        }
-
         div.nav__demo a.common-link {
 
             &:before {
@@ -179,14 +137,6 @@ div.nav {
                         background: $primary-pink;
                     }
 
-                    &:hover {
-                        color: $primary-pink;
-                    }
-
-                }
-
-                &.selected a {
-                    color: $primary-pink;
                 }
 
             }
@@ -195,8 +145,8 @@ div.nav {
 
         &:before {
             box-shadow: 0 1px 0 rgba($black, 0.1);
+            height: 66px;
             opacity: 1;
-            height: 59px;
         }
 
     }

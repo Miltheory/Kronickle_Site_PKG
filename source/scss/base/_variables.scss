@@ -3,6 +3,7 @@ $white: #FFF;
 $black: #231F20;
 
 $grey: #9B9B9B;
+$grey-light: #F9F8FD;
 
 $primary-blue: #16314C;
 $primary-purple: #6034AC;
@@ -16,8 +17,9 @@ $secondary-pink: #FE83AF;
 $secondary-green: #4CDD84;
 $secondary-orange: #FFB055;
 
-$transition: 0.3s cubic-bezier(0.5, 0.0, 0.2, 1.0);
-$transition-delay: 0.3s 0.3s cubic-bezier(0.5, 0.0, 0.2, 1.0);
+$transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+$transition-slow: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+$transition-delay: 0.3s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 $susy: (
 

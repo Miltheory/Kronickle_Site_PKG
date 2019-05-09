@@ -2,7 +2,7 @@ var testimonials = {
 
     settings: {
 
-        easing: 'easeInOutCubic',
+        easing: 'easeOutQuart',
         speed: 300
 
     },
@@ -17,6 +17,7 @@ var testimonials = {
             fade: true,
             pauseOnHover: false,
             speed: testimonials.settings.speed,
+            swipe: false,
             touchMove: false
 
         });

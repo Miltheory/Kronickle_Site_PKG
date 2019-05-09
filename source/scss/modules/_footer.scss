@@ -3,6 +3,8 @@ div.footer {
     @include span(full);
     background: $primary-blue;
     border-top: 2px solid $white;
+    position: relative;
+    z-index: 1;
 
     &__body {
         @include span(19 no-gutters);
@@ -50,10 +52,10 @@ div.footer {
 
                     color: $white;
                     position: relative;
-                    transition: color $transition;
+//                     transition: color $transition;
 
                     &:before {
-                        background: rgba($secondary-blue-light, 0.25);
+                        background: $white;
                         bottom: 0;
                         content: '';
                         height: 1px;
@@ -65,7 +67,7 @@ div.footer {
 
                     &:hover {
 
-                        color: $secondary-blue-light;
+//                         color: $secondary-blue-light;
 
                         &:before {
                             width: 100%;

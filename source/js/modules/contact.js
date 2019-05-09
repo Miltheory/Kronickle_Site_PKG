@@ -4,7 +4,7 @@ var contact = {
 
     settings: {
 
-        easing: 'easeInOutCubic',
+        easing: 'easeOutQuart',
         ready: false,
         speed: 300
 

@@ -3,28 +3,28 @@ div.common-content {
     h1 {
         font-size: 27px;
         font-weight: 400;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.045em;
         line-height: 28px;
         padding-bottom: 10px;
-        text-transform: uppercase;
+//         text-transform: uppercase;
     }
 
     h2 {
         font-size: 24px;
         font-weight: 400;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.045em;
         line-height: 27px;
         padding-bottom: 9px;
-        text-transform: uppercase;
+//         text-transform: uppercase;
     }
 
     h3 {
         font-size: 21px;
         font-weight: 500;
-        letter-spacing: 0.075em;
+        letter-spacing: 0.045em;
         line-height: 24px;
         padding: 1px 0 9px 0;
-        text-transform: uppercase;
+//         text-transform: uppercase;
     }
 
     h4 {
@@ -37,28 +37,55 @@ div.common-content {
     }
 
     h5 {
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
         letter-spacing: 0.045em;
-        line-height: 19px;
-        padding: 2px 0 10px 0;
+        line-height: 16px;
+        padding: 2px 0 12px 0;
+//         text-transform: uppercase;
     }
 
     h6 {
         font-size: 12px;
         font-weight: 600;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.045em;
         line-height: 14px;
         padding: 3px 0 11px 0;
-        text-transform: uppercase;
+//         text-transform: uppercase;
     }
 
-    p {
+    p,
+    ol,
+    ul {
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.045em;
         line-height: 22px;
+    }
+
+    p {
         padding-bottom: 19px;
+    }
+
+    ol,
+    ul {
+
+        padding-bottom: 12px;
+
+        li {
+            padding-bottom: 7px;
+        }
+
+    }
+
+    ol {
+        list-style: decimal-leading-zero;
+        padding-left: 36px;
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px;
     }
 
     a {
@@ -127,6 +154,42 @@ div.common-content {
                 color: $white;
             }
 
+        }
+
+    }
+
+    &--size-small {
+
+        p,
+        ol,
+        ul {
+            font-size: 14px;
+//             font-weight: 400;
+//             letter-spacing: 0.045em;
+            line-height: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        ol,
+        ul {
+
+//             padding-bottom: 12px;
+
+            li {
+                padding-bottom: 8px;
+            }
+
+        }
+
+        ol {
+            padding-left: 31px;
+        }
+
+        ul {
+            padding-left: 18px;
         }
 
     }

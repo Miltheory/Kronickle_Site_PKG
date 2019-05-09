@@ -1,17 +1,62 @@
 div.testimonials {
 
     @include span(full);
-    background: $primary-blue;
-    padding: 80px 0;
+    padding: 110px 0;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+
+    &__shape {
+
+//         background-color: rgba($black, 0.1);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110px;
+        left: -1%;
+        position: absolute;
+        width: 102%;
+
+        &--top {
+            background-image: url(../svg/primary-shape-blue-top.svg);
+            background-position: center 20px;
+            top: 0;
+            transform: translateY(1px);
+        }
+
+        &--bottom {
+            background-image: url(../svg/primary-shape-blue-bottom.svg);
+            background-position: center bottom;
+            bottom: 0;
+            transform: translateY(-1px);
+        }
+
+    }
+
+    &__wrap {
+
+        @include span(full);
+        background: $primary-blue;
+        position: relative;
+        z-index: 1;
+
+        div.container {
+            margin-bottom: -10px;
+            margin-top: -10px;
+            padding-top: 20px;
+        }
+
+    }
 
     &__headline {
         @include span(19 no-gutters);
+//         background-color: rgba($white, 0.1);
         margin: -5px gutter()*5 26px gutter()*5;
     }
 
     &__testimonials {
 
         @include span(full);
+//         background-color: rgba($white, 0.1);
         position: relative;
 
         div.testimonial {
@@ -146,7 +191,28 @@ div.testimonials {
 
     @include susy-media(1024px) {
 
-        padding: 150px 0;
+        padding: 220px 0;
+
+        &__shape {
+
+            &--top {
+                height: 220px;
+            }
+
+            &--bottom {
+                height: 220px;
+            }
+
+        }
+
+        &__wrap {
+
+            div.container {
+                margin-bottom: -70px;
+                margin-top: -70px;
+            }
+
+        }
 
         &__headline {
             margin-bottom: 36px;

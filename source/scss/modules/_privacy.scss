@@ -7,34 +7,73 @@ div.privacy {
 
     &__body {
         float: left;
-        margin: 60px;
+        margin: 60px 30px;
         position: relative;
-        width: calc(100% - 120px);
+        width: calc(100% - 60px);
     }
 
     &__headline {
         @include span(full);
-        margin: -5px 0 26px 0;
+        margin: -5px 0 36px 0;
     }
 
     &__content {
+
         @include span(full);
-        margin: -6px 0 -24px 0;
+        margin: -5px 0 -25px 0;
+
+        ul {
+
+            color: $secondary-blue;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            line-height: 19px;
+            list-style: upper-roman;
+            padding: 0 0 0 42px;
+
+            li {
+
+                padding-bottom: 0;
+
+                h4 {
+                    padding: 1px 0 21px 0;
+                }
+
+                p {
+                    color: $black;
+                }
+
+                ul {
+
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.045em;
+                    line-height: 20px;
+                    list-style: disc;
+                    padding: 0 0 12px 18px;
+
+                    li {
+                        padding-bottom: 8px;
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
 
 
     @include susy-media(1024px) {
 
-/*
         &__body {
-            margin-bottom: 150px;
-            margin-top: 150px;
-        }
-*/
-
-        &__headline {
-            margin-bottom: 36px;
+            margin-left: 60px;
+            margin-right: 60px;
+            width: calc(100% - 120px);
         }
 
     }

@@ -5,7 +5,7 @@ div.intro {
 
     &__body {
         @include span(19 no-gutters);
-        margin: 80px gutter()*5;
+        margin: 80px gutter()*5 35px gutter()*5;
         position: relative;
     }
 
@@ -24,7 +24,7 @@ div.intro {
     @include susy-media(1024px) {
 
         &__body {
-            margin-bottom: 150px;
+//             margin-bottom: 150px;
             margin-top: 150px;
         }
 

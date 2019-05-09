@@ -7,9 +7,7 @@ var modal = {
 
     settings: {
 
-        easing: 'easeInOutCubic',
-        ready: true,
-        speed: 300
+        ready: true
 
     },
 

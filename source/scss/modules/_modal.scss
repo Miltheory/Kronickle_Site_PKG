@@ -25,16 +25,18 @@ div.modal {
             max-width: 600px;
         }
 
+/*
         &--privacy {
             max-width: 800px;
         }
+*/
 
     }
 
     &__frame {
         @include span(full);
         background: $white;
-        box-shadow: 0 10px 40px 20px rgba($primary-blue, 0.15);
+        box-shadow: 0 3px 15px 9px rgba($primary-blue, 0.09);
         position: relative;
     }
 
@@ -66,7 +68,7 @@ div.modal {
                 margin-top: -1px;
                 position: absolute;
                 top: 50%;
-                transform: rotate(225deg) scale(0.5);
+                transform: rotate(225deg) scale(0.85);
                 transition: background $transition;
                 width: 100%;
 
@@ -115,6 +117,14 @@ div.modal {
 
 
     @include susy-media(1024px) {
+
+        &__wrap {
+
+            &--privacy {
+                max-width: 800px;
+            }
+
+        }
 
         &__frame {
             margin: 80px 0;

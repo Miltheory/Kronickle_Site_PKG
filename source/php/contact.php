@@ -14,7 +14,7 @@ if(strtolower($_SERVER["HTTP_X_REQUESTED_WITH"]) != "xmlhttprequest") {
             <div class="common-table">
                 <div class="common-cell">
                     <div class="modal__wrap modal__wrap--contact">
-                        <div class="modal__frame">
+                        <div class="modal__frame" data-aos="fade-up">
                             <div class="contact">
                                 <div class="contact__body">
                                     <div class="contact__headline common-headline common-headline--color-blue">
