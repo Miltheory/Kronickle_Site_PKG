@@ -15,8 +15,6 @@ var waves = {
 
         });
 
-
-
         TweenMax.set([
 
             $('#benefits__wave__1'),
@@ -34,8 +32,6 @@ var waves = {
             transformOrigin: '50% 100%'
 
         });
-
-
 
         TweenMax.set($('#intro__wave__1'), {
 
@@ -68,8 +64,6 @@ var waves = {
 
         });
 
-
-
         TweenMax.set($('#benefits__wave__1'), {
 
             scaleY: 0.9,
@@ -101,8 +95,6 @@ var waves = {
 
         });
 
-
-
         TweenMax.set($('#demo__wave__1'), {
 
             scaleY: 0.95,
@@ -133,8 +125,6 @@ var waves = {
             x: '-10%'
 
         });
-
-
 
         TweenMax.to($('#intro__wave__1'), 5, {
 
@@ -185,8 +175,6 @@ var waves = {
 
         });
 
-
-
         TweenMax.to($('#benefits__wave__1'), 7, {
 
             x: '6%',
@@ -236,8 +224,6 @@ var waves = {
 
         });
 
-
-
         TweenMax.to($('#demo__wave__1'), 6, {
 
             x: '6%',
@@ -286,8 +272,6 @@ var waves = {
             yoyo: true
 
         });
-
-
 
     }
 

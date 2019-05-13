@@ -2,65 +2,8 @@ div.banner {
 
     @include span(full);
     background: $primary-pink;
-//     padding-bottom: 139px;
     overflow: hidden;
     position: relative;
-
-
-
-/*
-    &__wave {
-
-//         background: rgba($black, 0.2);
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        width: 140%;
-
-        figure {
-
-            @include span(full);
-            background: rgba($black, 0.1);
-
-            svg {
-                @include imgscale();
-            }
-
-        }
-
-    }
-*/
-
-
-
-/*
-    &__shape {
-        background-image: url(../svg/primary-shape-pink-bottom.svg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 40px;
-        height: 130px;
-        left: 0;
-        transform: translateY(-1px);
-        position: absolute;
-        width: 110%;
-    }
-*/
-
-
-
-/*
-    &__wrap {
-        @include span(full);
-        background: $primary-pink;
-        position: relative;
-        z-index: 1;
-    }
-*/
-
-
 
     &__image {
 
@@ -95,15 +38,6 @@ div.banner {
 
     @include susy-media(1024px) {
 
-//         padding-bottom: 260px;
-
-/*
-        &__shape {
-//             bottom: 40px;
-            height: 200px;
-        }
-*/
-
         &__image {
 
             @include span(10 no-gutters last);
@@ -131,13 +65,3 @@ div.banner {
 
 
 }
-
-
-
-/*
-body.mobile {
-
-
-
-}
-*/

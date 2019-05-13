@@ -8,7 +8,7 @@ if(strtolower($_SERVER["HTTP_X_REQUESTED_WITH"]) != "xmlhttprequest") {
 
     $my_mailbox_key = hash("sha256", "2Wsp779Xa227R8qR");
     $my_mailbox_iv = substr(hash("sha256", "uv2v3849mm6J2uh8"), 0, 16);
-    $my_mailbox_email = base64_encode(openssl_encrypt("sean@seanmitchell.ca", "AES-256-CBC", $my_mailbox_key, 0, $my_mailbox_iv));
+    $my_mailbox_email = base64_encode(openssl_encrypt("info@kronickle.com", "AES-256-CBC", $my_mailbox_key, 0, $my_mailbox_iv));
 
 ?>
             <div class="common-table">

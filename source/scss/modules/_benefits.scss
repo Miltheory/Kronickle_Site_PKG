@@ -1,24 +1,8 @@
 div.benefits {
 
     @include span(full);
-//     padding-top: 110px;
     overflow: hidden;
     position: relative;
-
-/*
-    &__shape {
-        background-image: url(../svg/primary-shape-grey-top.svg);
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 110px;
-        left: -1%;
-        position: absolute;
-        top: 0;
-        transform: translateY(1px);
-        width: 102%;
-    }
-*/
 
     &__wave {
 
@@ -53,14 +37,6 @@ div.benefits {
         position: relative;
         z-index: 1;
     }
-
-/*
-    &__wrap {
-        @include span(full);
-        position: relative;
-        z-index: 1;
-    }
-*/
 
     &__body {
         @include span(19 no-gutters);
@@ -126,12 +102,6 @@ div.benefits {
 
     @include susy-media(1024px) {
 
-/*
-        &__shape {
-            height: 220px;
-        }
-*/
-
         &__body {
             margin-bottom: 110px;
             margin-top: 60px;
@@ -172,13 +142,3 @@ div.benefits {
 
 
 }
-
-
-
-/*
-body.mobile {
-
-
-
-}
-*/

@@ -78,8 +78,6 @@ var anchor = {
 
     goto(id) {
 
-//         anchor.resize();
-
         $('body, html').on('DOMMouseScroll keyup mousedown mousewheel scroll touchmove wheel', function() {
 
             $('body, html').stop();
