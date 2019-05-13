@@ -1,11 +1,70 @@
 div.benefits {
 
     @include span(full);
-    background: white;
+//     padding-top: 110px;
+    overflow: hidden;
+    position: relative;
+
+/*
+    &__shape {
+        background-image: url(../svg/primary-shape-grey-top.svg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110px;
+        left: -1%;
+        position: absolute;
+        top: 0;
+        transform: translateY(1px);
+        width: 102%;
+    }
+*/
+
+    &__wave {
+
+        float: left;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+        margin-bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 116%;
+
+        figure {
+
+            @include span(full);
+            left: 50%;
+            min-width: 600px;
+            position: relative;
+            transform: translateX(-50%);
+
+            svg {
+                @include imgscale();
+            }
+
+        }
+
+    }
+
+    &__wrap {
+        @include span(full);
+        background: $grey-light;
+        position: relative;
+        z-index: 1;
+    }
+
+/*
+    &__wrap {
+        @include span(full);
+        position: relative;
+        z-index: 1;
+    }
+*/
 
     &__body {
         @include span(19 no-gutters);
-        margin: 80px gutter()*5 40px gutter()*5;
+        margin: 40px gutter()*5 40px gutter()*5;
         position: relative;
     }
 
@@ -21,7 +80,7 @@ div.benefits {
         dl {
 
             @include span(full);
-            margin: -4px 0 35px 0;
+            margin: -4px 0 33px 0;
 
             dt h4 {
                 color: $primary-purple;
@@ -29,6 +88,8 @@ div.benefits {
             }
 
             dd p {
+                font-size: 16px;
+                line-height: 22px;
                 padding-bottom: 0;
             }
 
@@ -65,9 +126,15 @@ div.benefits {
 
     @include susy-media(1024px) {
 
+/*
+        &__shape {
+            height: 220px;
+        }
+*/
+
         &__body {
-            margin-bottom: 90px;
-            margin-top: 150px;
+            margin-bottom: 110px;
+            margin-top: 60px;
         }
 
         &__headline {
@@ -78,7 +145,6 @@ div.benefits {
 
             dl {
 
-//                 margin-bottom: 55px;
                 width: calc(33.33% - 40px);
 
                 &:nth-child(2n+2) {

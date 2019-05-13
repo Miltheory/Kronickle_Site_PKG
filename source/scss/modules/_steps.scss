@@ -1,6 +1,8 @@
 div.steps {
 
     @include span(full);
+    overflow: hidden;
+    padding-bottom: 70px;
     padding-top: 20px;
     position: relative;
 
@@ -13,13 +15,13 @@ div.steps {
 
             @include span(full);
             display: none;
-            padding-bottom: 130px;
+            padding-bottom: 67px;
             text-align: center;
 
             &__headline {
 
-                @include span(15 no-gutters);
-                margin: -4px gutter()*9 26px gutter()*9;
+                @include span(19 no-gutters);
+                margin: -4px gutter()*5 26px gutter()*5;
 
                 h5 {
                     color: $black;
@@ -30,16 +32,22 @@ div.steps {
 
             &__content {
 
-                @include span(15 no-gutters);
-                margin: -6px gutter()*9 -5px gutter()*9;
+                @include span(19 no-gutters);
+                margin: -6px gutter()*5 -5px gutter()*5;
 
                 ul {
 
                     list-style: none;
-                    padding-bottom: 0;
+                    padding: 0;
 
-                    li:last-child {
-                        padding-bottom: 0;
+                    li {
+
+                        padding-bottom: 18px;
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+
                     }
 
                 }
@@ -80,9 +88,9 @@ div.steps {
 
     &__control {
 
+        bottom: 0;
         height: 37px;
         position: absolute;
-        top: 31px;
         width: 37px;
 
         a {
@@ -91,6 +99,7 @@ div.steps {
             box-sizing: border-box;
             display: block;
             height: 100%;
+            position: absolute;
             width: 100%;
 
             svg {
@@ -111,11 +120,11 @@ div.steps {
         }
 
         &--prev {
-            left: gutter()*5;
+            left: calc(50% - 57px);
         }
 
         &--next {
-            right: gutter()*5;
+            left: calc(50% + 20px);
         }
 
     }
@@ -124,7 +133,64 @@ div.steps {
 
     @include susy-media(1024px) {
 
+        padding-bottom: 0;
 
+        &__steps {
+
+            div.step {
+
+                padding-bottom: 150px;
+
+                &__headline,
+                &__content {
+                    @include span(14 no-gutters);
+                    margin-left: gutter()*10;
+                    margin-right: gutter()*10;
+                }
+
+            }
+
+        }
+
+        &__control {
+
+            bottom: auto;
+            top: 31px;
+
+            &:before {
+                content: '';
+                height: 500px;
+                pointer-events: none;
+                position: absolute;
+                top: -31px;
+                width: 300px;
+                z-index: 0;
+            }
+
+            &--prev {
+
+                left: gutter()*5;
+
+                &:before {
+                    background: linear-gradient(90deg, rgba($white, 1), rgba($white, 1), rgba($white, 0));
+                    left: -130px;
+                }
+
+            }
+
+            &--next {
+
+                left: auto;
+                right: gutter()*5;
+
+                &:before {
+                    background: linear-gradient(90deg, rgba($white, 0), rgba($white, 1), rgba($white, 1));
+                    right: -130px;
+                }
+
+            }
+
+        }
 
     }
 

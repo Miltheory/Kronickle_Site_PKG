@@ -61,40 +61,49 @@ function is_mobile() {
         <div class="site">
 
             <div class="banner waypoint" id="banner">
-                <div class="banner__shape"></div>
-                <div class="banner__wrap">
-                    <div class="container">
-                        <div class="banner__image">
-                            <figure data-aos="fade-up">
-                                <img src="-/img/banner.png" alt="" />
-                            </figure>
+                <div class="container">
+                    <div class="banner__image">
+                        <figure data-aos="fade-up">
+                            <img src="-/img/banner.png" alt="" />
+                        </figure>
+                    </div>
+                    <div class="banner__body">
+                        <div class="banner__headline common-headline common-headline--color-white">
+                            <h1 data-aos="fade-up" data-aos-delay="50">The Modern Agency</h1>
                         </div>
-                        <div class="banner__body">
-                            <div class="banner__headline common-headline common-headline--color-white">
-                                <h1 data-aos="fade-up" data-aos-delay="50">The Modern Agency</h1>
-                            </div>
-                            <div class="banner__content common-content common-content--color-white">
-                                <p data-aos="fade-up" data-aos-delay="100">Introducing Kronickle, a revolutionary project ecosystem for modern advertising and creative agencies. Built to streamline and evolve the creative workflow, Kronickle provides an end-to-end solution to manage every aspect of a creative project, from strategic brief to final delivery. Let us handle the logistics so that you can focus on building great brands.</p>
-                            </div>
+                        <div class="banner__content common-content common-content--color-white">
+                            <p data-aos="fade-up" data-aos-delay="100">Introducing Kronickle, a revolutionary project ecosystem for modern advertising and creative agencies. Built to streamline and evolve the creative workflow, Kronickle provides an end-to-end solution to manage every aspect of a creative project, from strategic brief to final delivery. Let us handle the logistics so that you can focus on building great brands.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="intro waypoint" id="intro">
-                <div class="container">
-                    <div class="intro__body">
-                        <div class="intro__headline common-headline common-headline--color-blue">
-                            <h2 data-aos="fade-up">The Brand Story</h2>
-                        </div>
-                        <div class="intro__content common-content common-content--color-black">
-                            <p data-aos="fade-up" data-aos-delay="50">The traditional creative process breaks down when the team is not on the same page. Changing strategy. Client comments buried in emails. Revised scripts. And who knows where to reference the last campaign? Built by brand builders for brand builders, Kronickle modernizes the process by creating a place the whole agency can converge. It provides the latest story of the brand, and the history to back it up.</p>
+                <div class="intro__wave">
+                    <figure>
+                        <svg width="1200" height="120" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#FF6058">
+                                <path id="intro__wave__4" d="M440.4 119.367C640.691 110.124 790 33.913 790 0H100c.195 34.038 140.109 128.61 340.4 119.367z" fill-opacity=".7"/>
+                                <path id="intro__wave__3" d="M270.833 109.236C414.278 115.856 574 79.444 750 0H0c37.111 66.204 127.389 102.616 270.833 109.236z" fill-opacity=".25"/>
+                                <path id="intro__wave__2" d="M839.968 99.048C1065.416 88.89 1200 20 1200 0H450.834c-14.573 35.55 163.685 109.205 389.134 99.048z" fill-opacity=".5"/>
+                                <path id="intro__wave__1" d="M0 0h1200v10c-233.333 60-450 90-650 90S166.667 83.333 0 50V0z"/>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+                <div class="intro__wrap">
+                    <div class="container">
+                        <div class="intro__body">
+                            <div class="intro__headline common-headline common-headline--color-blue">
+                                <h2 data-aos="fade-up">The Brand Story</h2>
+                            </div>
+                            <div class="intro__content common-content common-content--color-black">
+                                <p data-aos="fade-up" data-aos-delay="50">The traditional creative process breaks down when the team is not on the same page. Changing strategy. Client comments buried in emails. Revised scripts. And who knows where to reference the last campaign? Built by brand builders for brand builders, Kronickle modernizes the process by creating a place the whole agency can converge. It provides the latest story of the brand, and the history to back it up.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
 
             <div class="ecosystem waypoint" id="ecosystem">
                 <div class="container">
@@ -134,61 +143,67 @@ function is_mobile() {
                         </div>
                         <div class="icon icon__1">
                             <div class="icon__headline common-headline">
-                                <h6>Brief Management</h6>
+                                <h6>Brief<br /> Management</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="47" height="58" xmlns="http://www.w3.org/2000/svg"><path d="M46.417 14.842c.385.46.592 1.044.583 1.644v35.246C47 55.194 44.203 58 40.752 58H6.248a6.237 6.237 0 0 1-4.434-1.851A6.278 6.278 0 0 1 0 51.688V6.268C0 2.806 2.797 0 6.248 0h24.484a2.57 2.57 0 0 1 1.639.706L46.34 14.842h.077zM33.075 8.111v6.036h6.005L33.075 8.11zm9.283 43.621l.022-32.895H30.589a2.263 2.263 0 0 1-1.587-.716 2.277 2.277 0 0 1-.613-1.635V4.746H6.248c-.863 0-1.562.7-1.562 1.566v45.42c0 .866.7 1.567 1.562 1.567h34.548c.415.003.814-.161 1.108-.456.293-.294.457-.694.454-1.11zm-28.441-19.68c-1.286-.038-2.32-1.041-2.36-2.289 0-1.264 1.057-2.29 2.36-2.29h19.937c1.3.007 2.353 1.028 2.36 2.29-.041 1.248-1.074 2.25-2.36 2.29H13.917zm-2.36 7.632c0-1.264 1.03-2.29 2.3-2.29h20.056c1.27 0 2.3 1.026 2.3 2.29a2.37 2.37 0 0 1-2.3 2.29H13.858a2.381 2.381 0 0 1-2.3-2.29z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
                         <div class="icon icon__2">
                             <div class="icon__headline common-headline">
-                                <h6>The Wall</h6>
+                                <h6>The<br /> Wall</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="47" height="69" xmlns="http://www.w3.org/2000/svg"><path d="M35.516 31.955l-1.284-20.677c.642-.209 1.498-.626 1.926-1.253 1.07-1.044 1.712-2.506 1.712-4.177 0-1.462-.642-2.924-1.712-4.177C35.088.627 33.59 0 31.878 0H14.978c-3.21 0-5.991 2.715-5.991 5.848 0 1.462.642 2.924 1.712 4.177.641.627 1.283 1.044 1.925 1.253L11.34 31.955a17.38 17.38 0 0 0-8.13 3.968C1.07 38.012 0 40.31 0 43.024c0 .627.214 1.045.642 1.462.428.418.856.627 1.498.627h14.976v10.651c0 .21 0 .418.214.836l4.065 10.234c.428.835 1.07 1.253 1.926 1.253.856 0 1.711-.627 1.925-1.253L29.311 56.6c0-.209.214-.418.214-.627l.214-10.651h14.763c.642 0 1.07-.21 1.498-.627.428-.418.642-.835.642-1.462.214-5.43-4.493-10.025-11.126-11.278zM25.46 45.113l-.214 10.234-1.925 4.803-1.926-4.803V45.113h4.065zm1.926-9.399h4.279c4.707 0 8.986 2.089 10.484 5.222H4.707c.428-.627.856-1.462 1.498-2.089 2.14-2.088 5.348-3.133 8.986-3.133h12.195zM16.902 11.696H29.74l1.284 19.841H15.405l1.497-19.841zm-3.21-6.892a1.655 1.655 0 0 1 1.07-.418h16.903c.428 0 .856.209 1.07.418.214.209.428.626.428 1.044 0 .835-.856 1.67-1.712 1.67H14.549c-.428 0-.856-.208-1.07-.417a1.576 1.576 0 0 1-.428-1.044c.214-.627.428-1.044.642-1.253z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
                         <div class="icon icon__3">
                             <div class="icon__headline common-headline">
-                                <h6>Project Pages</h6>
+                                <h6>Project<br /> Pages</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="69" height="49" xmlns="http://www.w3.org/2000/svg"><path d="M65.409 17.704a8.886 8.886 0 0 1-.747 3.402c2.607 2.594 3.969 6.099 3.762 9.681-.404 6.735-6.06 12.11-13.146 12.493h-14.4V38.18h14.245c4.322-.236 7.759-3.537 7.96-7.646.187-2.652-1.061-5.211-3.31-6.79l-2.1-1.446 1.41-1.955a7.1 7.1 0 0 0 .985-2.892c.145-3.304-2.528-6.106-6.002-6.294a5.685 5.685 0 0 0-2.818.51l-1.874.776-1.254-1.446c-4.639-5.076-11.98-7.092-18.753-5.15-6.773 1.942-11.716 7.481-12.626 14.148l-.352 2.303h-2.593c-4.186.356-7.462 3.581-7.688 7.57-.227 3.988 2.665 7.53 6.787 8.312h14.47v5.101H12.754C5.734 42.788.236 37.343.007 30.657-.22 23.972 4.895 18.2 11.866 17.276 14.33 6.769 24.408-.517 35.72.029c5.729.239 11.155 2.514 15.203 6.374a11.838 11.838 0 0 1 3.508-.322c3.079.156 5.966 1.468 8.025 3.649 2.058 2.18 3.12 5.05 2.952 7.974zM33.444 48.69h-.185c-1.446-.052-2.575-1.203-2.527-2.576V25.985l-2.727 2.711-.086.081c-.49.47-1.159.735-1.856.735a2.684 2.684 0 0 1-1.856-.735c-1.089-.957-1.171-2.565-.185-3.619l7.438-7.387c1.108-1.024 2.875-1.024 3.983 0l7.424 7.387c.986 1.054.903 2.662-.185 3.62-.461.49-1.12.772-1.814.772a2.924 2.924 0 0 1-1.984-.854l-2.727-2.71v20.127a.36.36 0 0 1 0 .177 2.428 2.428 0 0 1-.83 1.735c-.51.45-1.187.69-1.883.664z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
                         <div class="icon icon__4">
                             <div class="icon__headline common-headline">
-                                <h6>WIP Review</h6>
+                                <h6>WIP<br /> Review</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="62" height="57" xmlns="http://www.w3.org/2000/svg"><path d="M61.618 5.251c.03-.74-.245-1.46-.76-1.996a2.837 2.837 0 0 0-1.96-.886 2.974 2.974 0 0 0-2.026.767l-6.759 6.305C39.867-1.854 22.486-3.194 10.602 6.394-1.282 15.984-3.491 33.13 5.581 45.373c9.071 12.242 26.234 15.277 39.014 6.898 12.781-8.378 16.686-25.225 8.877-38.296l7.213-6.768a2.74 2.74 0 0 0 .933-1.956zM28.69 51.33c-10.648.016-19.928-7.186-22.47-17.438-2.542-10.252 2.312-20.9 11.753-25.781s21.025-2.733 28.047 5.203L27.183 30.815l-9.451-9.147a2.838 2.838 0 0 0-2-.822c-.75 0-1.47.296-2 .822a2.763 2.763 0 0 0-.8 1.983 2.633 2.633 0 0 0 .854 1.97l11.371 11.023a2.83 2.83 0 0 0 3.906 0l20.17-18.81a22.7 22.7 0 0 1-.715 22.51C44.31 47.205 36.786 51.374 28.69 51.33z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
                         <div class="icon icon__5">
                             <div class="icon__headline common-headline">
-                                <h6>Employee Credits</h6>
+                                <h6>Employee<br /> Credits</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="55" height="66" xmlns="http://www.w3.org/2000/svg"><path d="M14.596 65.538a2.22 2.22 0 0 1-1.553-.643 2.279 2.279 0 0 1-.639-1.578V55.43c.018-2.977 2.176-5.501 5.094-5.96a9.865 9.865 0 0 1 5.384-6.796v-2.051a18.428 18.428 0 0 1-11.839-8.909c-.554-.412-1.204-.837-1.854-1.286C5.576 27.999 0 24.358 0 17.914V8.386a2.2 2.2 0 0 1 2.192-2.208h6.443v-3.92a2.23 2.23 0 0 1 .628-1.59A2.196 2.196 0 0 1 10.827 0h32.516c1.217 0 2.204.994 2.204 2.221v3.908h6.382c1.218 0 2.204.994 2.204 2.221v9.54c0 6.371-5.515 10.085-9.152 12.525-.675.449-1.301.874-1.867 1.286a18.404 18.404 0 0 1-11.838 8.896v2.052a9.817 9.817 0 0 1 5.395 6.808c2.919.453 5.081 2.971 5.106 5.947v7.89a2.214 2.214 0 0 1-2.107 2.244H14.596zm2.192-4.43h20.618v-5.667c0-.878-.707-1.59-1.578-1.59h-17.45a1.571 1.571 0 0 0-1.124.461 1.596 1.596 0 0 0-.466 1.129v5.668zm10.32-14.988a5.466 5.466 0 0 0-4.973 3.264h9.948a5.478 5.478 0 0 0-4.974-3.264zM13.032 4.478v18.048c0 7.836 6.303 14.188 14.078 14.188 7.775 0 14.078-6.352 14.078-14.188V4.478H13.031zm-8.635 6.069v7.282c0 2.816 1.878 4.855 4.371 6.82a17.122 17.122 0 0 1-.132-2.22V10.608l-4.24-.061zm41.199 0v11.93a19.41 19.41 0 0 1-.133 2.21c2.409-1.906 4.312-4.006 4.312-6.81v-7.282l-4.18-.048z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
                         <div class="icon icon__6">
                             <div class="icon__headline common-headline">
-                                <h6>Talent Rights</h6>
+                                <h6>Talent<br /> Rights</h6>
                             </div>
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="66" height="67" xmlns="http://www.w3.org/2000/svg"><path d="M65.698 24.895a4.009 4.009 0 0 0-3.782-2.565l-18.802-.177-6.24-19.383-.08-.203A4.285 4.285 0 0 0 32.783 0c-1.685.016-3.18 1.101-3.741 2.715l-6.04 19.26L4 22.33h-.24c-1.754.243-3.186 1.542-3.622 3.284a4.107 4.107 0 0 0 1.483 4.33l15.18 12.216-5.571 19.546a4.308 4.308 0 0 0 1.723 4.561c.67.475 1.468.731 2.285.733a4.087 4.087 0 0 0 2.42-.814l15.233-11.51L48.5 66.171l.227.136a4.182 4.182 0 0 0 4.677-.312 4.204 4.204 0 0 0 1.47-4.425L49.154 42.12l15.354-12.216.214-.204a4.503 4.503 0 0 0 .976-4.805zm-20.74 14.456a2.397 2.397 0 0 0-.815 2.579l5.68 19.26-15.555-11.483a2.407 2.407 0 0 0-1.337-.461 2.341 2.341 0 0 0-1.416.475L16.36 61.177l5.492-19.26a2.452 2.452 0 0 0-.802-2.566L5.764 27.135l19.03-.326a2.41 2.41 0 0 0 2.217-1.67l5.96-18.962 6.16 19.112a2.355 2.355 0 0 0 2.286 1.656l19.029.19L44.958 39.35z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
@@ -199,6 +214,7 @@ function is_mobile() {
                             <div class="icon__icon">
                                 <figure>
                                     <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M58.553 52.059h-1.608V21.264h4.622c1.206 0 2.21-1.048 2.21-2.305 0-.838-.401-1.676-1.205-2.095L33.032.314c-.603-.419-1.407-.419-2.21 0l-29.54 16.55C.076 17.493-.326 18.96.277 20.007a2.199 2.199 0 0 0 2.01 1.257h4.621v30.795H5.502c-2.613 0-4.622 2.095-4.622 4.818v2.305C.88 61.905 2.89 64 5.502 64h53.252c2.612 0 4.622-2.095 4.622-4.818v-2.305c-.201-2.514-2.21-4.818-4.823-4.818zm-6.029 0h-6.832V21.264h6.832v30.795zm-18.286 0V21.264h6.832v30.795h-6.832zm-11.454 0V21.264h6.832v30.795h-6.832zm9.243-47.136l20.497 11.522H11.53L32.027 4.923zM11.53 21.263h6.833V52.06H11.53V21.264zM4.698 60.23v-4.19h54.659v4.19H4.697z"/></svg>
+                                    <div></div>
                                 </figure>
                             </div>
                         </div>
@@ -306,128 +322,93 @@ function is_mobile() {
                 </div>
             </div>
 
-            <div class="testimonials waypoint" id="testimonials">
-                <div class="testimonials__shape testimonials__shape--top"></div>
-                <div class="testimonials__shape testimonials__shape--bottom"></div>
-                <div class="testimonials__wrap">
-                    <div class="container">
-                        <div class="testimonials__headline common-headline common-headline--color-white">
-                            <h2 data-aos="fade-up">Who&rsquo;s on Kronickle</h2>
-                        </div>
-                        <div class="testimonials__testimonials" data-aos="fade-up">
-                            <div class="testimonial">
-                                <div class="testimonial__body">
-                                    <div class="testimonial__content">
-                                        <p>We love what Kronickle has to offer and ever since we started using their platform out productivity and efficiency has increased immensely. This has revolutionized the way we work!&rdquo;</p>
-                                    </div>
-                                    <div class="testimonial__cite">
-                                        <dl>
-                                            <dt>Jennifer Smith</dt>
-                                            <dd>Account Manager, AT&amp;T</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="testimonial__body">
-                                    <div class="testimonial__content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt labore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat aute irure dolor reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur sint occaecat cupidatat non proident culpa qui officia deserunt.&rdquo;</p>
-                                    </div>
-                                    <div class="testimonial__cite">
-                                        <dl>
-                                            <dt>Jim Nastics</dt>
-                                            <dd>High Duke, District of Squamish</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="testimonial__body">
-                                    <div class="testimonial__content">
-                                        <p>Adipiscing elit sed eiusmod tempor incididunt labore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat aute irure dolor reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur sint occaecat cupidatat non proident culpa qui officia deserunt lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt labore magna aliqua enim minim veniam quis.&rdquo;</p>
-                                    </div>
-                                    <div class="testimonial__cite">
-                                        <dl>
-                                            <dt>Lauren Gypsum</dt>
-                                            <dd>Placeholder, Alphabet</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonials__controller" data-aos="fade-up">
-                            <ul>
-                                <li><a href="javascript:void(0);" data-key="0"><span></span></a></li>
-                                <li><a href="javascript:void(0);" data-key="1"><span></span></a></li>
-                                <li><a href="javascript:void(0);" data-key="2"><span></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="benefits waypoint" id="benefits">
-                <div class="container">
-                    <div class="benefits__body">
-                        <div class="benefits__headline common-headline common-headline--color-blue">
-                            <h2 data-aos="fade-up">Benefits</h2>
-                        </div>
-                        <div class="benefits__content common-content common-content--color-black">
-                            <dl data-aos="fade-up" data-aos-delay="">
-                                <dt>
-                                    <h4>All-in-One Solution</h4>
-                                </dt>
-                                <dd>
-                                    <p>Kronickle combines project management, digital asset management, and company culture-building tools into one single ecosystem. This eliminates the disconnected and time-consuming experience of daisy-chaining multiple applications.</p>
-                                </dd>
-                            </dl>
-                            <dl data-aos="fade-up" data-aos-delay="50">
-                                <dt>
-                                    <h4>For Brand Builders</h4>
-                                </dt>
-                                <dd>
-                                    <p>Designed and developed by brand builders for brand builders. Kronickle addresses the specific processes and logistical challenges agencies and brands face in creating, managing and sharing assets quickly and efficiently.</p>
-                                </dd>
-                            </dl>
-                            <dl data-aos="fade-up" data-aos-delay="100">
-                                <dt>
-                                    <h4>Transparent &amp; Collaborative</h4>
-                                </dt>
-                                <dd>
-                                    <p>From creative to account services to legal, Kronickle is designed to serve the entire agency &mdash; not just one department. Not all collaborators and key decision-makers have the same life-span on a project, so Kronickle provides up-to-date information to anyone who needs it.</p>
-                                </dd>
-                            </dl>
-                            <dl data-aos="fade-up" data-aos-delay="150">
-                                <dt>
-                                    <h4>Employee Engagement</h4>
-                                </dt>
-                                <dd>
-                                    <p>Replacing great talent is tough. Kronickle makes it easier for agencies and creative teams to transfer brand expertise when on-boarding new team members. Kronickle also allows you to recognize and celebrate employee contributions.</p>
-                                </dd>
-                            </dl>
-                            <dl data-aos="fade-up" data-aos-delay="200">
-                                <dt>
-                                    <h4>Share Work Effortlessly</h4>
-                                </dt>
-                                <dd>
-                                    <p>Kronickle is designed to retain the original quality of all videos, documents, and images. Files can be previewed, reducing the need to download them first. Kronickle transcodes on-the-fly, so there&rsquo;s no need to compress video files, allowing clients to view HD video in its full glory.</p>
-                                </dd>
-                            </dl>
-                            <dl data-aos="fade-up" data-aos-delay="250">
-                                <dt>
-                                    <h4>Security in the Cloud</h4>
-                                </dt>
-                                <dd>
-                                    <p>Kronickle is committed to protecting your data and users. Our platform is designed to protect you from threats by applying security controls at every layer of our application so that you can focus on the creative.</p>
-                                </dd>
-                            </dl>
+                <div class="benefits__wave">
+                    <figure>
+                        <svg width="1200" height="120" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <path id="benefits__wave__4" d="M449.6.633C649.891-8.611 789.805 85.962 790 120H100C100 86.087 249.309 9.876 449.6.633z" fill-opacity=".3" fill="#CCC7E9"/>
+                                <path id="benefits__wave__3" d="M479.167 10.764C622.61 17.384 712.889 53.796 750 120H0C176 40.556 335.722 4.144 479.167 10.764z" fill-opacity=".4" fill="#CCC7E9"/>
+                                <path id="benefits__wave__2" d="M810.032 20.952c225.45-10.157 403.707 63.499 389.134 99.048H450c0-20 134.584-88.89 360.032-99.048z" fill-opacity=".5" fill="#CCC7E9"/>
+                                <path id="benefits__wave__1" d="M1200 120H0v-10c233.333-60 450-90 650-90s383.333 16.667 550 50v50z" fill="#F9F8FD"/>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+                <div class="benefits__wrap">
+                    <div class="container">
+                        <div class="benefits__body">
+                            <div class="benefits__headline common-headline common-headline--color-blue">
+                                <h2 data-aos="fade-up">Benefits</h2>
+                            </div>
+                            <div class="benefits__content common-content common-content--color-black">
+                                <dl data-aos="fade-up" data-aos-delay="">
+                                    <dt>
+                                        <h4>All-in-One Solution</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>Kronickle combines project management, digital asset management, and company culture-building tools into one single ecosystem. This eliminates the disconnected and time-consuming experience of daisy-chaining multiple applications.</p>
+                                    </dd>
+                                </dl>
+                                <dl data-aos="fade-up" data-aos-delay="50">
+                                    <dt>
+                                        <h4>For Brand Builders</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>Designed and developed by brand builders for brand builders. Kronickle addresses the specific processes and logistical challenges agencies and brands face in creating, managing and sharing assets quickly and efficiently.</p>
+                                    </dd>
+                                </dl>
+                                <dl data-aos="fade-up" data-aos-delay="100">
+                                    <dt>
+                                        <h4>Transparent &amp; Collaborative</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>From creative to account services to legal, Kronickle is designed to serve the entire agency &mdash; not just one department. Not all collaborators and key decision-makers have the same life-span on a project, so Kronickle provides up-to-date information to anyone who needs it.</p>
+                                    </dd>
+                                </dl>
+                                <dl data-aos="fade-up" data-aos-delay="150">
+                                    <dt>
+                                        <h4>Employee Engagement</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>Replacing great talent is tough. Kronickle makes it easier for agencies and creative teams to transfer brand expertise when on-boarding new team members. Kronickle also allows you to recognize and celebrate employee contributions.</p>
+                                    </dd>
+                                </dl>
+                                <dl data-aos="fade-up" data-aos-delay="200">
+                                    <dt>
+                                        <h4>Share Work Effortlessly</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>Kronickle is designed to retain the original quality of all videos, documents, and images. Files can be previewed, reducing the need to download them first. Kronickle transcodes on-the-fly, so there&rsquo;s no need to compress video files, allowing clients to view HD video in its full glory.</p>
+                                    </dd>
+                                </dl>
+                                <dl data-aos="fade-up" data-aos-delay="250">
+                                    <dt>
+                                        <h4>Security in the Cloud</h4>
+                                    </dt>
+                                    <dd>
+                                        <p>Kronickle is committed to protecting your data and users. Our platform is designed to protect you from threats by applying security controls at every layer of our application so that you can focus on the creative.</p>
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="demo waypoint" id="demo">
-                <div class="demo__shape"></div>
+                <div class="demo__wave">
+                    <figure>
+                        <svg width="1200" height="120" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#FF6058">
+                                <path id="demo__wave__4" d="M440.4.633C640.691 9.876 790 86.087 790 120H100C100.195 85.962 240.109-8.61 440.4.633z" fill-opacity=".7"/>
+                                <path id="demo__wave__3" d="M270.833 10.764C414.278 4.144 574 40.556 750 120H0C37.111 53.796 127.389 17.384 270.833 10.764z" fill-opacity=".25"/>
+                                <path id="demo__wave__2" d="M839.968 20.952C1065.416 31.11 1200 100 1200 120H450.834C436.261 84.45 614.519 10.795 839.968 20.952z" fill-opacity=".5"/>
+                                <path id="demo__wave__1" d="M0 120V70c166.667-33.333 350-50 550-50s416.667 30 650 90v10H0z"/>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
                 <div class="demo__wrap">
                     <div class="container">
                         <div class="demo__body">
@@ -450,7 +431,7 @@ function is_mobile() {
                             <h6>Connect</h6>
                             <ul>
                                 <li><a href="mailto:info@kronickle.com">info@kronickle.com</a></li>
-                                <li><span>(310) 528-8668</span></li>
+                                <li><a href="tel:3232089370">(323) 208-9370</a></li>
                             </ul>
                         </div>
                         <div class="footer__content footer__content--legal" data-aos="fade-up" data-aos-delay="50">
@@ -471,7 +452,6 @@ function is_mobile() {
             <div class="nav__options">
                 <ul>
                     <li class="nav--intro"><a href="javascript:void(0);" data-anchor="intro">How It Works</a></li>
-                    <li class="nav--testimonials"><a href="javascript:void(0);" data-anchor="testimonials">Clients</a></li>
                     <li class="nav--benefits"><a href="javascript:void(0);" data-anchor="benefits">Benefits</a></li>
                 </ul>
             </div>
@@ -480,7 +460,6 @@ function is_mobile() {
         <div class="drawer">
             <ul>
                 <li><a href="javascript:void(0);" class="link" data-anchor="intro">How It Works</a></li>
-                <li><a href="javascript:void(0);" class="link" data-anchor="testimonials">Clients</a></li>
                 <li><a href="javascript:void(0);" class="link" data-anchor="benefits">Benefits</a></li>
                 <li><a href="javascript:void(0);" class="common-link common-link--color-blue js-modal-contact"><span>Request a Demo</span></a></li>
             </ul>

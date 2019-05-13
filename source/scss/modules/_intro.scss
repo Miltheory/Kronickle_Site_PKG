@@ -2,10 +2,45 @@ div.intro {
 
     @include span(full);
     background: $white;
+    overflow: hidden;
+    position: relative;
+
+    &__wave {
+
+        float: left;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+        margin-top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 116%;
+
+        figure {
+
+            @include span(full);
+            left: 50%;
+            min-width: 600px;
+            position: relative;
+            transform: translateX(-50%);
+
+            svg {
+                @include imgscale();
+            }
+
+        }
+
+    }
+
+    &__wrap {
+        @include span(full);
+        position: relative;
+        z-index: 1;
+    }
 
     &__body {
         @include span(19 no-gutters);
-        margin: 80px gutter()*5 35px gutter()*5;
+        margin: 70px gutter()*5 35px gutter()*5;
         position: relative;
     }
 
@@ -24,8 +59,7 @@ div.intro {
     @include susy-media(1024px) {
 
         &__body {
-//             margin-bottom: 150px;
-            margin-top: 150px;
+            margin-top: 120px;
         }
 
         &__headline {

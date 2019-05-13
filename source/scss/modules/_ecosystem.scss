@@ -4,6 +4,12 @@ div.ecosystem {
     overflow: hidden;
     user-select: none;
 
+    div.container {
+        margin-bottom: -170px;
+        margin-top: -170px;
+        transform: scale(0.5);
+    }
+
     &__background {
         @include span(full);
         position: relative;
@@ -15,12 +21,13 @@ div.ecosystem {
         position: absolute;
         text-align: center;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) scale(1.5);
         width: 100%;
 
         h2 {
             line-height: 40px;
             margin: -8px 0 -6px 0;
+
         }
 
     }
@@ -56,7 +63,6 @@ div.ecosystem {
 
     &__icons {
 
-//         background: rgba(#f00, 0.1);
         height: 508px;
         left: calc(50% - 254px);
         position: absolute;
@@ -66,7 +72,6 @@ div.ecosystem {
 
         div.paths {
 
-//             background: rgba(#f00, 0.1);
             height: 508px;
             position: absolute;
             width: 508px;
@@ -105,12 +110,18 @@ div.ecosystem {
             &__headline {
 
                 bottom: 0;
+                height: 28px;
                 position: absolute;
                 text-align: center;
+                transform: scale(1.5);
                 width: 100%;
 
                 h6 {
+                    position: absolute;
+                    top: 50%;
                     transition: opacity $transition-slow;
+                    transform: translateY(-50%);
+                    width: 100%;
                 }
 
             }
@@ -118,10 +129,9 @@ div.ecosystem {
             &__icon {
 
                 @include span(full);
-                padding-bottom: 25px;
+                padding-bottom: 42px;
                 position: relative;
                 text-align: center;
-                transition: padding $transition-slow;
 
                 figure {
 
@@ -129,10 +139,9 @@ div.ecosystem {
                     position: relative;
                     transition: transform $transition-slow;
 
-                    &:after {
+                    div {
                         background: $black;
                         border-radius: 50%;
-                        content: '';
                         height: 20px;
                         left: 0;
                         opacity: 0.6;
@@ -141,8 +150,12 @@ div.ecosystem {
                         width: 20px;
                     }
 
-                    svg path {
-                        fill: $secondary-blue;
+                    svg {
+
+                        path {
+                            fill: $secondary-blue;
+                        }
+
                     }
 
                 }
@@ -161,8 +174,6 @@ div.ecosystem {
 
                 div.icon__icon {
 
-                    padding-bottom: 0;
-
                     figure {
 
                         transform: scale(1.6);
@@ -179,7 +190,7 @@ div.ecosystem {
 
             &__1 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $primary-pink;
                     left: auto;
                     right: -10px;
@@ -193,7 +204,7 @@ div.ecosystem {
 
             &__2 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-orange;
                     left: 30px;
                     top: -5px;
@@ -207,7 +218,7 @@ div.ecosystem {
 
             &__3 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-purple;
                     left: auto;
                     right: -3px;
@@ -224,7 +235,7 @@ div.ecosystem {
 
                 top: 25px;
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-green;
                     left: -5px;
                     top: 0;
@@ -238,7 +249,7 @@ div.ecosystem {
 
             &__5 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-blue-light;
                     left: -5px;
                     top: -5px;
@@ -253,7 +264,7 @@ div.ecosystem {
 
             &__6 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-pink;
                     left: -10px;
                     top: 15px;
@@ -267,7 +278,7 @@ div.ecosystem {
 
             &__7 {
 
-                div.icon__icon figure:after {
+                div.icon__icon figure div {
                     background: $secondary-blue;
                     left: -5px;
                     top: 10px;
@@ -287,7 +298,38 @@ div.ecosystem {
 
     @include susy-media(1024px) {
 
+        div.container {
+            margin-bottom: 0;
+            margin-top: 0;
+            transform: none;
+        }
 
+        &__headline {
+            transform: translateY(-50%);
+        }
+
+        &__icons {
+
+            div.icon {
+
+                &__headline {
+
+                    height: 14px;
+                    transform: none;
+
+                    br {
+                        display: none;
+                    }
+
+                }
+
+                &__icon {
+                    padding-bottom: 24px;
+                }
+
+            }
+
+        }
 
     }
 

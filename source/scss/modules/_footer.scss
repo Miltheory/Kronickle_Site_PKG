@@ -8,7 +8,8 @@ div.footer {
 
     &__body {
         @include span(19 no-gutters);
-        margin: 80px gutter()*5;
+        overflow: hidden;
+        padding: 80px gutter()*5;
         position: relative;
     }
 
@@ -52,7 +53,6 @@ div.footer {
 
                     color: $white;
                     position: relative;
-//                     transition: color $transition;
 
                     &:before {
                         background: $white;
@@ -67,8 +67,6 @@ div.footer {
 
                     &:hover {
 
-//                         color: $secondary-blue-light;
-
                         &:before {
                             width: 100%;
                         }
@@ -82,7 +80,7 @@ div.footer {
         }
 
         &--connect {
-            margin: -8px 0 28px 0;
+            margin: -9px 0 28px 0;
         }
 
         &--legal {
@@ -164,8 +162,8 @@ div.footer {
     @include susy-media(1024px) {
 
         &__body {
-            margin-bottom: 100px;
-            margin-top: 100px;
+            padding-bottom: 100px;
+            padding-top: 100px;
         }
 
         &__content {

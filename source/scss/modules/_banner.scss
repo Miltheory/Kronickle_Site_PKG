@@ -1,63 +1,71 @@
 div.banner {
 
     @include span(full);
-    padding-bottom: 110px;
-    overflow-x: hidden;
+    background: $primary-pink;
+//     padding-bottom: 139px;
+    overflow: hidden;
     position: relative;
 
+
+
+/*
+    &__wave {
+
+//         background: rgba($black, 0.2);
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 140%;
+
+        figure {
+
+            @include span(full);
+            background: rgba($black, 0.1);
+
+            svg {
+                @include imgscale();
+            }
+
+        }
+
+    }
+*/
+
+
+
+/*
     &__shape {
-//         background-color: rgba($black, 0.1);
         background-image: url(../svg/primary-shape-pink-bottom.svg);
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        bottom: 0;
-        height: 110px;
-        left: -1%;
+        bottom: 40px;
+        height: 130px;
+        left: 0;
         transform: translateY(-1px);
         position: absolute;
-        width: 102%;
+        width: 110%;
     }
+*/
 
+
+
+/*
     &__wrap {
         @include span(full);
         background: $primary-pink;
         position: relative;
         z-index: 1;
     }
+*/
+
+
 
     &__image {
 
         @include span(19 no-gutters);
         margin: 165px gutter()*5 40px gutter()*5;
-
-/*
-        position: relative;
-
-        div.container {
-//             background: rgba($white, 0.2);
-            max-width: 414px;
-        }
-
-        &__desktop {
-//             background: rgba(#ff0, 0.2);
-            float: left;
-            max-width: 396px;
-            padding-right: 4.35%;
-        }
-
-        &__mobile {
-//             background: rgba($white, 0.2);
-            bottom: -5px;
-            max-width: 132px;
-            position: absolute;
-            right: -16px;
-        }
-
-        figure {
-            @include span(full);
-        }
-*/
 
         figure {
             display: block;
@@ -70,7 +78,7 @@ div.banner {
 
     &__body {
         @include span(19 no-gutters);
-        margin: 0 gutter()*5 -30px gutter()*5;
+        margin: 0 gutter()*5 80px gutter()*5;
     }
 
     &__headline {
@@ -80,23 +88,26 @@ div.banner {
 
     &__content {
         @include span(full);
-        margin: -6px 0 -24px 0;
+        margin: -6px 0 -25px 0;
     }
 
 
 
     @include susy-media(1024px) {
 
-        padding-bottom: 220px;
+//         padding-bottom: 260px;
 
+/*
         &__shape {
-            height: 220px;
+//             bottom: 40px;
+            height: 200px;
         }
+*/
 
         &__image {
 
             @include span(10 no-gutters last);
-            margin: 230px gutter()*5 -50px 0;
+            margin: 250px gutter()*5 80px 0;
 
             figure {
                 margin: 0;
@@ -107,7 +118,7 @@ div.banner {
 
         &__body {
             @include span(8.5 no-gutters);
-            margin: 230px 0 -50px gutter()*5;
+            margin: 250px 0 80px gutter()*5;
         }
 
         &__headline {

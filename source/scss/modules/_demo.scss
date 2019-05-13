@@ -1,12 +1,46 @@
 div.demo {
 
     @include span(full);
-    padding-top: 110px;
-    overflow-x: hidden;
+    background-color: $grey-light;
+    overflow: hidden;
     position: relative;
 
+    &__wave {
+
+        float: left;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+        margin-bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 116%;
+
+        figure {
+
+            @include span(full);
+            left: 50%;
+            min-width: 600px;
+            position: relative;
+            transform: translateX(-50%);
+
+            svg {
+                @include imgscale();
+            }
+
+        }
+
+    }
+
+    &__wrap {
+        @include span(full);
+        background: $primary-pink;
+        position: relative;
+        z-index: 1;
+    }
+
+/*
     &__shape {
-//         background-color: rgba($black, 0.1);
         background-image: url(../svg/primary-shape-pink-top.svg);
         background-position: center top;
         background-repeat: no-repeat;
@@ -18,18 +52,20 @@ div.demo {
         transform: translateY(1px);
         width: 102%;
     }
+*/
 
+/*
     &__wrap {
         @include span(full);
         background: $primary-pink;
         position: relative;
         z-index: 1;
     }
+*/
 
     &__body {
         @include span(19 no-gutters);
-//         background-color: rgba($black, 0.1);
-        margin: -10px gutter()*5 80px gutter()*5;
+        margin: 40px gutter()*5 80px gutter()*5;
         position: relative;
     }
 
@@ -40,7 +76,7 @@ div.demo {
 
     &__content {
         @include span(full);
-        margin: -6px 0 -24px 0;
+        margin: -6px 0 -25px 0;
     }
 
     &__link {
@@ -54,15 +90,15 @@ div.demo {
 
     @include susy-media(1024px) {
 
-        padding-top: 220px;
-
+/*
         &__shape {
             height: 220px;
         }
+*/
 
         &__body {
             margin-bottom: 150px;
-            margin-top: -40px;
+            margin-top: 60px;
         }
 
         &__headline {

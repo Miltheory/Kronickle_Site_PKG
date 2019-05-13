@@ -4,12 +4,10 @@ import 'waypoints/lib/jquery.waypoints.min.js';
 
 import AOS from 'aos';
 import FastClick from 'fastclick';
-// import lax from 'lax.js';
 import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
 import TweenMax from 'gsap/TweenMax';
 
 import anchor from './modules/anchor';
-// import contact from './modules/contact';
 import drawer from './modules/drawer';
 import ecosystem from './modules/ecosystem';
 import footer from './modules/footer';
@@ -18,7 +16,7 @@ import menu from './modules/menu';
 import modal from './modules/modal';
 import nav from './modules/nav';
 import steps from './modules/steps';
-import testimonials from './modules/testimonials';
+import waves from './modules/waves';
 import xhr from './modules/xhr';
 
 $(document).ready(function() {
@@ -26,8 +24,6 @@ $(document).ready(function() {
     FastClick.attach(document.body);
 
     anchor.ready();
-
-//     contact.ready();
 
     drawer.ready();
 
@@ -45,7 +41,7 @@ $(document).ready(function() {
 
     steps.ready();
 
-    testimonials.ready();
+    waves.ready();
 
     xhr.ready();
 
@@ -79,8 +75,6 @@ $(window).on('load', function() {
 
     anchor.load();
 
-
-
     AOS.init({
 
         duration: 600,
@@ -88,23 +82,5 @@ $(window).on('load', function() {
         offset: 50
 
     });
-
-
-
-/*
-    lax.setup();
-
-	const updateLax = () => {
-
-		lax.update(window.scrollY);
-
-		window.requestAnimationFrame(updateLax);
-
-	}
-
-	window.requestAnimationFrame(updateLax);
-*/
-
-
 
 });

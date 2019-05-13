@@ -5,7 +5,7 @@ var steps = {
     settings: {
 
         easing: 'easeOutQuart',
-        speed: 300
+        speed: 600
 
     },
 
@@ -16,12 +16,8 @@ var steps = {
             adaptiveHeight: true,
             arrows: false,
             easing: steps.settings.easing,
-            fade: true,
-            infinite: false,
             pauseOnHover: false,
-            speed: steps.settings.speed,
-            swipe: false,
-            touchMove: false
+            speed: steps.settings.speed
 
         });
 
@@ -35,13 +31,13 @@ var steps = {
 
         $('div.steps__control--prev a').click(function() {
 
-            if(ecosystem.settings.ready) $('div.steps__steps').slick('slickPrev');
+            $('div.steps__steps').slick('slickPrev');
 
         });
 
         $('div.steps__control--next a').click(function() {
 
-            if(ecosystem.settings.ready) $('div.steps__steps').slick('slickNext');
+            $('div.steps__steps').slick('slickNext');
 
         });
 
